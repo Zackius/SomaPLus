@@ -1,7 +1,13 @@
 import React from "react";
 import { photo1, photo2, photo3, photo4 } from "../../assests";
-import ImageSlider, { Slide } from "react-auto-image-slider";
+import SimpleImageSlider from "react-simple-image-slider";
 const Hero = () => {
+    const images = [
+        { url: photo1},
+        { url: photo2 },
+        { url: photo3 },
+        { url:  photo4 }
+    ]
   return (
     <div name="home" className=" w-full  h-[900px] ">
       {/* Container  */}
@@ -22,24 +28,16 @@ const Hero = () => {
             </p>
           </div>
           <div>
-            <ImageSlider
-              className="w-92 h-92"
-              effectDelay={500}
-              autoPlayDelay={2000}
-            >
-              <Slide>
-                <img alt="img1" src={`${photo3}`} />
-              </Slide>
-              <Slide>
-                <img alt="img2" src={`${photo1}`} />
-              </Slide>
-              <Slide>
-                <img alt="img3" src={`${photo2}`} />
-              </Slide>
-              <Slide>
-                <img alt="img4" src={`${photo4}`} />
-              </Slide>
-            </ImageSlider>
+          <SimpleImageSlider 
+        width={896}
+                          height={504}
+                          loop={true}
+                          autoPlayDelay={2.0}
+                          autoPlay={true}
+        images={images}
+        showBullets={true}
+   
+      />
           </div>
         </div>
       </div>
