@@ -65,32 +65,32 @@ const Navbar = () => {
       >
         <ul>
         <li className="py-6 text-4xl">
-          <Link to="home" smooth={true} duration={300}>
+          <Link to="home">
             Home
           </Link>
         </li>
         <li className="py-6 text-4xl">
-          <Link to="about" smooth={true} duration={300}>
+          <Link to="about">
             About
           </Link>
         </li>
         <li className="py-6 text-4xl">
-          <Link to="skills" smooth={true} duration={300}>
+          <Link to="skills">
             Skills
           </Link>
         </li>
         <li className="py-6 text-4xl">
-          <Link to="work" smooth={true} duration={300}>
+          <Link to="work">
             Work
           </Link>
           </li>
           <li className="py-6 text-4xl">
-          <Link to="/" smooth={true} duration={300}>
+          <Link to="/">
             Blog
           </Link>
         </li>
         <li className="py-6 text-4xl">
-          <Link to="contact" smooth={true} duration={300}>
+          <Link to="contact">
             Contact
           </Link>
           </li>
