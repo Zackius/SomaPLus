@@ -1,12 +1,14 @@
 import './App.css';
+import Books from './Components/Books/Books';
 import Hero from './Components/Hero/Hero';
 import Navbar from './Components/Navbar/Navbar';
 
 function App() {
   return (
-    <div>
+    <div >
       <Navbar />
-      <Hero/>
+      <Hero />
+      <Books/>
 </div>
   );
 }
